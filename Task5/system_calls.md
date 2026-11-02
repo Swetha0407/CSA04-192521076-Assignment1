@@ -249,7 +249,7 @@ The program terminated with exit status `0`, indicating successful execution.
 ## 8. Practical Evidence
 
 ### Program Execution
-![Successful program execution](../Evidence/Task5/01_program_execution.png)
+![Successful program execution](../Evidence/Task5/1.program_execution.png)
 
 ### System Call Trace
-![System calls captured using strace](../Evidence/Task5/02_strace_output.png)
+![System calls captured using strace](../Evidence/Task5/2.strace_output.png)
