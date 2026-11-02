@@ -199,28 +199,43 @@ Therefore, the CPU would need to handle approximately **131.07 million interrupt
 
 Assume each interrupt requires approximately 5 microseconds of CPU handling time.
 
-\[
-T = \text{Number of interrupts}\times
-\text{Time per interrupt}
-\]
+Calculate the total CPU handling time:
 
-\[
-T=131,072,000\times5\ \mu s
-\]
+$$
+T = \text{Number of Interrupts} \times \text{Time per Interrupt}
+$$
 
-\[
-T=655,360\text{ seconds}
-\]
+Substitute the values:
+
+$$
+T = 131,072,000 \times 5\ \mu s
+$$
+
+$$
+T = 655,360,000\ \mu s
+$$
+
+Convert microseconds into seconds:
+
+$$
+T = \frac{655,360,000}{1,000,000}
+$$
+
+$$
+T = 655.36\ \text{seconds}
+$$
 
 Convert into hours:
 
-\[
-\frac{655,360}{3600}=182.04\text{ hours}
-\]
+$$
+T = \frac{655.36}{3600}
+$$
 
-This is approximately 7.6 days of cumulative CPU interrupt-handling time under the assumed cost.
+$$
+T \approx 0.182\ \text{hours}
+$$
 
-*Note: This is an illustrative calculation, not an actual MRI transfer-time measurement. Real interrupt-handling costs depend on the processor, operating system, device, and interrupt handler.*
+This is approximately 10.92 minutes of cumulative CPU interrupt-handling time under the assumed cost.
 
 ### 6.3 Interrupt-Driven I/O vs DMA
 
