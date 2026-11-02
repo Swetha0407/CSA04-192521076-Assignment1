@@ -1,0 +1,5 @@
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 \250\2\0\0\0\0\0"..., 832) = 832
+write(1, "Enter a message: ", 17)       = 17
+read(0, "hello everyone\n", 100)        = 15
+write(1, "hello everyone\n", 15)        = 15
++++ exited with 0 +++
