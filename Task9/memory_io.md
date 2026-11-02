@@ -143,24 +143,23 @@ Assume:
 
 Convert SSD access time into nanoseconds:
 
-\[
+$$
 100\ \mu s = 100,000\ ns
-\]
+$$
 
-Speed ratio:
+Calculate the speed ratio:
 
-\[
-\text{Speed Ratio}=\frac{100,000}{80}
-\]
+$$
+\text{Speed Ratio} = \frac{100,000}{80}
+$$
 
-\[
-=1250
-\]
+$$
+= 1,250
+$$
 
-In this illustrative comparison, RAM access is approximately 1,250 times faster than SSD access.
+In this illustrative comparison, RAM access is approximately **1,250 times faster** than SSD access.
 
 **Evaluation:** Caching reduces repeated storage access, improves database response time, and helps serve multiple doctors efficiently. Actual lookup performance also depends on cache hit rate, indexing, query execution, and database workload.
-
 ## 6. Alternative Concept – Interrupt-Driven I/O Instead of DMA
 
 The assignment considers an MRI scanner transferring a 500 MB image using one interrupt per word instead of DMA.
@@ -169,7 +168,7 @@ This would generate a very large number of interrupts and significantly increase
 
 ### 6.1 Calculate the Number of Interrupts
 
-Assumptions:
+**Assumptions:**
 
 - Image size = 500 MB.
 - Word size = 4 bytes (32 bits).
@@ -177,24 +176,21 @@ Assumptions:
 
 Convert the image size into bytes:
 
-\[
-500 \times 1024 \times 1024
-=524,288,000\text{ bytes}
-\]
+$$
+500 \times 1024 \times 1024 = 524,288,000\ \text{bytes}
+$$
 
 Calculate the number of words:
 
-\[
-\text{Number of words}
-=\frac{524,288,000}{4}
-\]
+$$
+\text{Number of Words} = \frac{524,288,000}{4}
+$$
 
-\[
-=131,072,000
-\]
+$$
+= 131,072,000
+$$
 
 Therefore, the CPU would need to handle approximately **131.07 million interrupts**.
-
 ### 6.2 Calculate CPU Time
 
 Assume each interrupt requires approximately 5 microseconds of CPU handling time.
@@ -204,8 +200,6 @@ Calculate the total CPU handling time:
 $$
 T = \text{Number of Interrupts} \times \text{Time per Interrupt}
 $$
-
-Substitute the values:
 
 $$
 T = 131,072,000 \times 5\ \mu s
@@ -235,8 +229,7 @@ $$
 T \approx 0.182\ \text{hours}
 $$
 
-This is approximately 10.92 minutes of cumulative CPU interrupt-handling time under the assumed cost.
-
+This is approximately **10.92 minutes** of cumulative CPU interrupt-handling time under the assumed cost.
 ### 6.3 Interrupt-Driven I/O vs DMA
 
 | Factor | One Interrupt Per Word | DMA |
