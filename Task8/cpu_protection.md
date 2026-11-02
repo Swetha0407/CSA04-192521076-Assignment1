@@ -133,17 +133,17 @@ Let:
 
 ### Polling Delay
 
-If an abnormal reading arrives immediately after the CPU checks the sensor, the system may have to wait almost an entire polling interval before detecting it.
+If an abnormal reading arrives immediately after the CPU checks the sensor, the system may have to wait almost one complete polling interval before detecting it.
 
 Therefore:
 
-\[
+$$
 D_{\text{poll,max}} \approx T_p
-\]
+$$
 
-For example, if the polling interval is 20 ms, the worst-case detection delay is approximately 20 ms. This cannot satisfy the hospital's 10 ms alarm requirement.
+For example, if the polling interval is 20 ms, the worst-case detection delay is approximately 20 ms. This cannot satisfy the hospital alarm requirement.
 
-If the polling interval is reduced to 5 ms, the maximum nominal polling wait becomes approximately 5 ms. However, additional time is still required to process the reading and activate the alarm.
+If the polling interval is reduced to 5 ms, the maximum nominal polling wait becomes approximately 5 ms. However, additional time is required to process the reading and activate the alarm.
 
 ### Interrupt Response Delay
 
@@ -151,9 +151,9 @@ In an interrupt-driven system, the device signals the CPU when an event occurs.
 
 The detection delay depends on interrupt response latency:
 
-\[
+$$
 D_{\text{interrupt}} \approx L_i
-\]
+$$
 
 The interrupt response latency must be bounded and measured under the expected system workload.
 
