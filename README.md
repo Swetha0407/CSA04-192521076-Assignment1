@@ -71,17 +71,38 @@ CSA04-192521076-Assignment1/
 ├── README.md
 │
 ├── Task1/
+│   └── requirements.md
+|
 ├── Task2/
+│   └── os_types.md
+|
 ├── Task3/
+│   └── os_structures.md
+|
 ├── Task4/
+│   └── os_services.md
+|
 ├── Task5/
+│   ├── system_call.md
+│   ├── system_call_demo.c
+│   ├── system_call_demo
+│   └── system_call.text
+│   └── system_call2.text
+|
 ├── Task6/
+│   ├── system_call_copy.md
+│   ├── file_copy.c
+│   ├── file_copy
+│   └── strace_summary.txt
+│
 ├── Task7/
 ├── Task8/
+│   └── cpu_protection.md
 ├── Task9/
+│   └── memory_io.md
 │
 ├── Task10/
-│   ├── Task10_Measurement_and_Performance_Analysis.md
+│   ├── Measurement_and_Performance_Analysis.md
 │   ├── copy_compare.c
 │   ├── process_benchmark.c
 │   └── thread_benchmark.c
@@ -90,18 +111,12 @@ CSA04-192521076-Assignment1/
 │   └── hospital_architecture.md
 │
 ├── Task12/
-│   └── remote_monitoring_cloud_adaptation.md
+│   └── cloud_redesign.md
 │
 └── Evidence/
-    ├── Task1/
-    ├── Task2/
-    ├── Task3/
-    ├── Task4/
     ├── Task5/
     ├── Task6/
     ├── Task7/
-    ├── Task8/
-    ├── Task9/
     └── Task10/
 ```
 
